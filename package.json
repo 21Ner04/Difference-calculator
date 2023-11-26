@@ -13,7 +13,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "commander": "^11.1.0"
-  },
-  "devDependencies": {}
+    "commander": "^11.1.0",
+    "lodash": "^4.17.21"
+  }
 }
