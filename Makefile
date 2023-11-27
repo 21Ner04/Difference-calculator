@@ -8,7 +8,13 @@ publish:
 	npm publish --dry-run
 
 run:
-	node bin/gendiff __fixtures__/file1.json __fixtures__/file2.json
+	node bin/gendiff file1.json file2.json
 
 test:
-	gendiff __fixtures__/file1.json __fixtures__/file2.json
+	npm test
+
+lint:
+	npx eslint
+
+test-coverage:
+    npm jest --coverage
