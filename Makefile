@@ -1,20 +1,14 @@
-install:
+install: 
 	npm ci
 
-gendiff:
-	node/gendiff.js
-
 publish:
-	npm publish --dry-run
-
-run:
-	node bin/gendiff file1.json file2.json
+	npm publish --dry-run 
 
 test:
 	npm test
 
-lint:
-	npx eslint
-
 test-coverage:
-    npm jest --coverage
+	npm test -- --coverage --coverageProvider=v8
+
+lint:
+	npx eslint .

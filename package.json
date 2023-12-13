@@ -1,27 +1,31 @@
 {
   "name": "@hexlet/code",
-  "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/21Ner04/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/21Ner04/frontend-project-46/actions)",
-  "main": "index.js",
-  "scripts": {
-    "test": "npx jest"
-  },
-  "author": "21Ner04",
+  "version": "1.0.0",
   "type": "module",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "21Ner04",
   "license": "ISC",
   "dependencies": {
     "commander": "^11.1.0",
-    "eslint": "^8.54.0",
-    "lodash": "^4.17.21"
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7",
+    "url": "^0.11.3",
+    "yaml": "^2.3.4"
   },
   "devDependencies": {
-    "@jest/globals": "^29.7.0",
-    "eslint": "^8.40.0",
+    "eslint": "^8.54.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jest": "^27.6.0",
     "jest": "^29.7.0"
   }
 }
